@@ -1,4 +1,4 @@
-% figureS3_homoclinicFigure.m
+% figureS3.m
 % Evidence for homoclinic bifurcation in host rich & small burst size regime.
 %
 % Panel A: mixed limit cycles in (H_C, V_C) phase plane at several rho

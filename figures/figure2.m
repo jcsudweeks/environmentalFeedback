@@ -1,4 +1,4 @@
-% figure2_mixedLCPhasePlane.m
+% figure2.m
 % Phase plane of the mixed limit cycle in (V_C, V_D) space for the
 % rg1_2CO parameter set, with the single/double infection threshold
 % V_C + V_D = mu1/mu2 marked.

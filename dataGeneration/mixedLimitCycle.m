@@ -7,8 +7,8 @@
 % introduces a small defector population, and integrates long enough to
 % converge onto the limit cycle; records its min/max amplitude.
 %
-% Output: mixedLimitCycles.mat -- loaded by figure1_combinedBifurcation.m
-% and figure2_mixedLCPhasePlane.m.
+% Output: mixedLimitCycles.mat -- loaded by figure1.m
+% and mixedLCPhasePlaneData.m.
 
 addpath('../functions')
 

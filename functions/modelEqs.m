@@ -24,14 +24,14 @@ U = X(1);
 C = X(2);
 D =X(3);
 M =X(4);
-PC = X(5);
-PD =X(6);
+VC = X(5);
+VD =X(6);
 
 dX=zeros(6,1);
-dX(1) =  r.*U - xi.*(U.^2) - U.*mu1.*(PC+PD) - U.*mu2.*(PC.^2 + 2.*PC.*PD + PD.^2) ;
-dX(2)= U.*PC.*(mu1 + mu2.*PC) - d.*C;
-dX(3)= U.*PD.*(mu1+mu2.*PD) - d.*D;
-dX(4)= 2.*mu2.*U.*PC.*PD - d.*M;
-dX(5)= lambda.*d.*(2.*alpha.*C + beta.*M) - d.*kappa.*PC;
-dX(6)= lambda.*d.*(g.*M + 2.*delta.*D) - d.*kappa.*PD;
+dX(1) =  r.*U - xi.*(U.^2) - U.*mu1.*(VC+VD) - U.*mu2.*(VC.^2 + 2.*VC.*VD + VD.^2) ;
+dX(2)= U.*VC.*(mu1 + mu2.*VC) - d.*C;
+dX(3)= U.*VD.*(mu1+mu2.*VD) - d.*D;
+dX(4)= 2.*mu2.*U.*VC.*VD - d.*M;
+dX(5)= lambda.*d.*(2.*alpha.*C + beta.*M) - d.*kappa.*VC;
+dX(6)= lambda.*d.*(g.*M + 2.*delta.*D) - d.*kappa.*VD;
 end

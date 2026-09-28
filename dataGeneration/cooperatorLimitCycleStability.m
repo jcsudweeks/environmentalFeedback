@@ -148,6 +148,6 @@ ylabel('stability (2=stable, 1=unstable)')
 
 %% Save output
 CLCPoint = limitCycle(1,:);   % a point on the reference limit cycle, used to
-                               % seed trajectories elsewhere (e.g. figure3_HostExtinction.m)
+                               % seed trajectories elsewhere (e.g. figure3.m)
 save("../data/limitCycleStabilityData.mat", "allMins", "allMaxes", "stabVec", "rhoVec", ...
     "limCycleHostMax", "limCycleHostMin", "rhoTransition","limitCycle","CLCPoint")

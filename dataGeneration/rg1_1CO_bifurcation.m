@@ -2,7 +2,7 @@
 % Generates bifurcation data for the host-rich, large-burst-size regime
 % (rg1_1CO).
 %
-% Output: data/rg1_1CO_run.mat -- loaded by figure1_combinedBifurcation.m,
+% Output: data/rg1_1CO_run.mat -- loaded by figure1.m,
 % verifyBifurcations.m, cooperatorLimitCycleStability.m, and
 % defectorLimitCycle.m.
 

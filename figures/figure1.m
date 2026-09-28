@@ -1,4 +1,4 @@
-%% figure1_combinedBifurcation.m
+%% figure1.m
 % Combined bifurcation diagram across all three ecological regimes.
 % Row 1: total host density (H_U + H_C + H_D + H_M)
 % Row 2: total viral density (V_C + V_D)

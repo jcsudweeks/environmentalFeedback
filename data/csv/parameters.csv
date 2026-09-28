@@ -1,0 +1,28 @@
+regime,parameter,value,description
+rl1,mu1,3.1306548835667e-06,single-infection adsorption rate
+rl1,mu2,9.801e-12,double-infection adsorption rate
+rl1,r,0.138629436111989,host growth rate
+rl1,d,0.550964187327824,lysis rate of infected hosts (1/latent period)
+rl1,kappa,1,virus decay rate relative to d (viruses decay at rate d*kappa)
+rl1,lambda,210,burst size
+rl1,xi,0.000138629436111989,host density dependence (r / carrying capacity)
+rg1_1CO,mu1,3.1306548835667e-06,single-infection adsorption rate
+rg1_1CO,mu2,9.801e-12,double-infection adsorption rate
+rg1_1CO,r,5,host growth rate
+rg1_1CO,d,0.550964187327824,lysis rate of infected hosts (1/latent period)
+rg1_1CO,kappa,1,virus decay rate relative to d (viruses decay at rate d*kappa)
+rg1_1CO,lambda,210,burst size
+rg1_1CO,xi,0.005,host density dependence (r / carrying capacity)
+rg1_2CO,mu1,3.1306548835667e-06,single-infection adsorption rate
+rg1_2CO,mu2,9.801e-12,double-infection adsorption rate
+rg1_2CO,r,5,host growth rate
+rg1_2CO,d,0.550964187327824,lysis rate of infected hosts (1/latent period)
+rg1_2CO,kappa,1,virus decay rate relative to d (viruses decay at rate d*kappa)
+rg1_2CO,lambda,77,burst size
+rg1_2CO,xi,0.005,host density dependence (r / carrying capacity)
+rg1_2CO,lowerThresh,67.8818860184261,lambda_S: lower bound on burst size for the host rich & small burst size regime (= ltNum/ltDen)
+rg1_2CO,upperThresh,87.9950374312931,lambda_T: upper bound on burst size for the host rich & small burst size regime (= utNum/utDen)
+rg1_2CO,ltNum,6.84674223036036e-18,numerator of lowerThresh
+rg1_2CO,ltDen,1.0086258105e-19,denominator of lowerThresh
+rg1_2CO,utNum,0.00275482093663912,numerator of upperThresh
+rg1_2CO,utDen,3.1306548835667e-05,denominator of upperThresh

@@ -1,8 +1,10 @@
 % mixedLCPhasePlaneData.m
 % Generates trajectory data for the mixed limit cycle phase plane in
-% (V_C, V_D) space, for the rg1_2CO parameter set.
+% (V_C, V_D) space, for the rg1_2CO parameter set. After a long
+% transient, one full loop of the limit cycle (from one V_C peak to the
+% next) is kept for each rho.
 %
-% Output: mixedLCPhasePlaneData.mat -- loaded by figure2_mixedLCPhasePlane.m.
+% Output: mixedLCPhasePlaneData.mat -- loaded by figure2.m.
 
 addpath('../functions')
 
@@ -25,9 +27,10 @@ for k = 1:length(rhoVec)
 
     [~, pop] = ode45(@modelEqs, [0, t_plot], pop0, opts, param);
 
-    tail        = pop(round(0.5*end):end, :);
-    VCdata{k}   = tail(:, 5);
-    VDdata{k}   = tail(:, 6);
+    [~, locs]   = findpeaks(pop(:, 5));
+    seg         = locs(end-1):locs(end);    % last full loop, V_C peak to V_C peak
+    VCdata{k}   = pop(seg, 5);
+    VDdata{k}   = pop(seg, 6);
     fCdata{k}   = VCdata{k} ./ (VCdata{k} + VDdata{k});
 end
 

@@ -1,7 +1,7 @@
 % rl1Bifurcation.m
 % Generates bifurcation data for the host-poor regime (rl1: r < 1).
 %
-% Output: data/rl1_run.mat -- loaded by figure1_combinedBifurcation.m
+% Output: data/rl1_run.mat -- loaded by figure1.m
 % and verifyBifurcations.m.
 
 addpath('../functions')

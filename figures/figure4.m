@@ -1,4 +1,4 @@
-% figure4_viralExtinction.m
+% figure4.m
 % Viral extinction dynamics in the rg1_2CO parameter set at rho = 0.65.
 % Starting from E_C^S, defectors are introduced; cooperators are driven
 % into the E_U basin and virus goes extinct.

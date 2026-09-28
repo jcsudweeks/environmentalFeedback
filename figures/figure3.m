@@ -1,4 +1,4 @@
-% figure3_HostExtinction.m
+% figure3.m
 % Host extinction dynamics in the rg1_1CO parameter set at rho = 0.6:
 % starting on the cooperator limit cycle, a few defectors are introduced
 % and the population settles to a stable (defector) equilibrium.

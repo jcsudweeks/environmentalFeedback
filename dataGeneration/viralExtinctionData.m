@@ -4,7 +4,7 @@
 % Starting from E_C^S, defectors are introduced; cooperators are driven
 % into the E_U basin and virus goes extinct.
 %
-% Output: viralExtinctionData.mat -- loaded by figure4_viralExtinction.m.
+% Output: viralExtinctionData.mat -- loaded by figure4.m.
 
 addpath('../functions')
 

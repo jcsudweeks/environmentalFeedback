@@ -8,7 +8,7 @@
 % (slightly shifted) new cycle rather than find it from scratch.
 %
 % Output: defectorLimitCycleAmps.mat -- loaded by
-% figure1_combinedBifurcation.m.
+% figure1.m.
 
 addpath('../functions')
 

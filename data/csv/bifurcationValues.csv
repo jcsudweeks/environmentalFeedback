@@ -1,0 +1,16 @@
+regime,bifurcation,rho,method
+rl1,rho_TUD,0.419023987768062,analytical
+rl1,rho_TMC,0.927131253934579,mixedCollisions (cubic)
+rl1,rho_TMD,0.930296242284762,mixedCollisions (quadratic)
+rg1_1CO,rho_SD,0.32324707627822,analytical
+rg1_1CO,rho_TMC,0.38332306011171,mixedCollisions (cubic)
+rg1_1CO,rho_M,0.388984026227679,eigenvalue bisection at E_M
+rg1_1CO,rho_TDU,0.419023987768062,analytical
+rg1_1CO,rho_LC,0.430762935093471,cooperatorLimitCycleStability.m
+rg1_1CO,rho_TMD,0.439329052314517,mixedCollisions (quadratic)
+rg1_1CO,rho_HD,0.848988953535407,eigenvalue bisection at E_D^S
+rg1_2CO,rho_TMC1,0.479956041413072,mixedCollisions (cubic)
+rg1_2CO,rho_HM,0.594431849888393,eigenvalue bisection at E_M
+rg1_2CO,rho_HC,0.628637046813965,homoclinicRho.m
+rg1_2CO,rho_TMC2,0.832890628621086,mixedCollisions (cubic)
+rg1_2CO,rho_SD,0.881582935304235,analytical

@@ -223,15 +223,15 @@ end
 function J_fun = buildSymbolicJacobian()
 % Builds a fast matlabFunction handle for the Jacobian of modelEqs.
 % Called once at script startup; evaluation is then cheap.
-syms U C D M PC PD mu1 mu2 r d kappa lambda xi rho real
-f = [r*U - xi*U^2 - U*mu1*(PC+PD) - U*mu2*(PC^2 + 2*PC*PD + PD^2);
-     U*PC*(mu1 + mu2*PC) - d*C;
-     U*PD*(mu1 + mu2*PD) - d*D;
-     2*mu2*U*PC*PD - d*M;
-     lambda*d*(2*C) - d*kappa*PC;
-     lambda*d*((1+rho)*M + 2*rho*D) - d*kappa*PD];
-J_sym = jacobian(f, [U, C, D, M, PC, PD]);
-J_fun = matlabFunction(J_sym, 'Vars', {U, C, D, M, PC, PD, mu1, mu2, r, d, kappa, lambda, xi, rho});
+syms U C D M VC VD mu1 mu2 r d kappa lambda xi rho real
+f = [r*U - xi*U^2 - U*mu1*(VC+VD) - U*mu2*(VC^2 + 2*VC*VD + VD^2);
+     U*VC*(mu1 + mu2*VC) - d*C;
+     U*VD*(mu1 + mu2*VD) - d*D;
+     2*mu2*U*VC*VD - d*M;
+     lambda*d*(2*C) - d*kappa*VC;
+     lambda*d*((1+rho)*M + 2*rho*D) - d*kappa*VD];
+J_sym = jacobian(f, [U, C, D, M, VC, VD]);
+J_fun = matlabFunction(J_sym, 'Vars', {U, C, D, M, VC, VD, mu1, mu2, r, d, kappa, lambda, xi, rho});
 end
 
 
